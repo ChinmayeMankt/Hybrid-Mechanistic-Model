@@ -1,0 +1,22 @@
+# Hybrid Mechanistic-ML Digital Twin for Chromatography
+# =========================================================
+# Python >= 3.10 recommended
+#
+# Install with:
+#   pip install -r requirements.txt
+#
+# For development (tests, notebooks):
+#   pip install -r requirements.txt -r requirements-dev.txt
+
+# --- Core scientific stack ---
+numpy>=1.24,<2.0          # Array operations, finite-difference kernels
+scipy>=1.10,<2.0          # ODE integration (solve_ivp / Radau), signal processing
+
+# --- Machine learning ---
+scikit-learn>=1.3,<2.0    # GaussianProcessRegressor, StandardScaler, kernels
+
+# --- Persistence ---
+joblib>=1.3               # Model serialization (already a sklearn dependency)
+
+# --- Visualization (optional but expected for notebooks) ---
+matplotlib>=3.7           # Chromatogram plots
